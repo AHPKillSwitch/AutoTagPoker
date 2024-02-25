@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x84">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="Assembly" version="1">Generated plugin from scratch.</revision>
+		<revision author="Lord Zedd" version="2">Pasta.</revision>
+	</revisions>
+	<tagRef name="Vertex Shader" offset="0x0" visible="true" />
+	<tagRef name="Pixel Shader" offset="0x10" visible="true" />
+	<bitfield32 name="Active Drawmodes" offset="0x20" visible="true">
+		<bit name="default" index="0" />
+		<bit name="albedo" index="1" />
+		<bit name="static__default" index="2" />
+		<bit name="static__per__pixel" index="3" />
+		<bit name="static__per__vertex" index="4" />
+		<bit name="static__sh" index="5" />
+		<bit name="static__prt__ambient" index="6" />
+		<bit name="static__prt__linear" index="7" />
+		<bit name="static__prt__quadratic" index="8" />
+		<bit name="dynamic__light" index="9" />
+		<bit name="shadow__generate" index="10" />
+		<bit name="shadow__apply" index="11" />
+		<bit name="active__camo" index="12" />
+		<bit name="lightmap_debug_mode" index="13" />
+		<bit name="static__per__vertex_color" index="14" />
+		<bit name="water_tesselation" index="15" />
+		<bit name="water__shading" index="16" />
+		<bit name="dynamic__light__cinematic" index="17" />
+		<bit name="z__only" index="18"  />
+		<bit name="sfx__distort" index="19" />
+	</bitfield32>
+	<reflexive name="Shader Drawmodes" offset="0x24" visible="true" entrySize="0x2">
+		<enum8 name="Pixel Shader Type" offset="0x0" visible="true">
+			<option name="default_ps" value="0x0" />
+			<option name="albedo_ps" value="0x1" />
+			<option name="static_default_ps" value="0x2" />
+			<option name="static_per_pixel_ps" value="0x3" />
+			<option name="static_per_vertex_ps" value="0x4" />
+			<option name="static_sh_ps" value="0x5" />
+			<option name="static_prt_ps" value="0x6" />
+			<option name="static_prt_ps" value="0x7" />
+			<option name="static_prt_ps" value="0x8" />
+			<option name="dynamic_light_ps" value="0x9" />
+			<option name="shadow_generate_ps" value="0xA" />
+			<option name="shadow_apply_ps" value="0xB" />
+			<option name="active_camo_ps" value="0xC" />
+			<option name="lightmap_debug_mode_ps" value="0xD" />
+			<option name="static_per_vertex_color_ps" value="0xE" />
+			<option name="water_tessellation_ps" value="0xF" />
+			<option name="water_shading_ps" value="0x10" />
+			<option name="dynamic_light_cine_ps" value="0x11" />
+			<option name="z_only_ps" value="0x12" />
+			<option name="sfx_distort_ps" value="0x13" />
+		</enum8>
+		<enum8 name="Vertex Shader Type" offset="0x1" visible="true">
+			<option name="default_vs" value="0x0" />
+			<option name="albedo_vs" value="0x1" />
+			<option name="static_default_vs" value="0x2" />
+			<option name="static_per_pixel_vs" value="0x3" />
+			<option name="static_per_vertex_vs" value="0x4" />
+			<option name="static_sh_vs" value="0x5" />
+			<option name="static_prt_vs" value="0x6" />
+			<option name="static_prt_vs" value="0x7" />
+			<option name="static_prt_vs" value="0x8" />
+			<option name="dynamic_light_vs" value="0x9" />
+			<option name="shadow_generate_vs" value="0xA" />
+			<option name="shadow_apply_vs" value="0xB" />
+			<option name="active_camo_vs" value="0xC" />
+			<option name="lightmap_debug_mode_vs" value="0xD" />
+			<option name="static_per_vertex_color_vs" value="0xE" />
+			<option name="water_tessellation_vs" value="0xF" />
+			<option name="water_shading_vs" value="0x10" />
+			<option name="dynamic_light_cine_vs" value="0x11" />
+			<option name="z_only_vs" value="0x12" />
+			<option name="sfx_distort_vs" value="0x13" />
+		</enum8>
+	</reflexive>
+	<reflexive name="Drawmode Register Offsets" offset="0x30" visible="false" entrySize="0x1C">
+        <uint16 name="ShaderMap Sampler Registers" offset="0x00" visible="true" />
+		<uint16 name="Unknown Vector Registers" offset="0x02" visible="true" />
+		<uint16 name="Unknown" offset="0x04" visible="true" />
+		<uint16 name="Unknown" offset="0x06" visible="true" />
+		<uint16 name="Arguments Vector Registers" offset="0x08" visible="true" />
+		<uint16 name="Unknown" offset="0x0A" visible="true" />
+		<uint16 name="Global Arguments Vector Registers" offset="0x0C" visible="true" />
+		<uint16 name="Render Buffer Sampler Registers" offset="0x0E" visible="true" />
+		<uint16 name="Unknown" offset="0x10" visible="true" />
+		<uint16 name="Unknown" offset="0x12" visible="true" />
+		<uint16 name="Debug Vector Registers" offset="0x14" visible="true" />
+		<uint16 name="Unknown" offset="0x16" visible="true" />
+		<uint16 name="Unknown" offset="0x18" visible="true" />
+		<uint16 name="Unknown" offset="0x1A" visible="true" />
+	</reflexive>
+	<reflexive name="ArgumentMappings" offset="0x3C" visible="true" entrySize="0x4">
+		<uint16 name="RegisterIndex" offset="0x0" visible="true" />
+		<uint8 name="ArgumentIndex" offset="0x2" visible="true" />
+		<uint8 name="Unknown" offset="0x3" visible="false" />
+	</reflexive>
+	<reflexive name="Arguments" offset="0x48" visible="true" entrySize="0x4">
+		<stringId name="Name" offset="0x0" visible="true" />
+	</reflexive>
+	<reflexive name="Unknown5" offset="0x54" visible="false" entrySize="0x4">
+		<stringid name="Unknown" offset="0x0" visible="true" />
+	</reflexive>
+	<reflexive name="Global Arguments" offset="0x60" visible="true" entrySize="0x4">
+		<stringid name="Name" offset="0x0" visible="true" />
+	</reflexive>
+	<reflexive name="ShaderMaps" offset="0x6C" visible="true" entrySize="0x4">
+		<stringid name="Name" offset="0x0" visible="true" />
+	</reflexive>
+	<undefined name="Unknown" offset="0x78" visible="false" />
+	<undefined name="Unknown" offset="0x7C" visible="false" />
+	<undefined name="Unknown" offset="0x80" visible="false" />
+</plugin>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x44">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="Assembly" version="1">Generated plugin from scratch.</revision>
+	</revisions>
+	<tagRef name="Base Render Method" offset="0x0" visible="true" />
+	<reflexive name="Unknown" offset="0x10" visible="false" entrySize="0x2">
+		<int16 name="Unknown" offset="0x0" visible="false" />
+	</reflexive>
+	<reflexive name="Shader Properties" offset="0x28" visible="true" entrySize="0x84">
+		<tagRef name="Template" offset="0x0" visible="true" />
+		<reflexive name="Shader Maps" offset="0x10" visible="true" entrySize="0x18">
+			<tagRef name="Bitmap" offset="0x0" visible="true" />
+			<int8 name="Unknown" offset="0x10" visible="false" />
+			<int8 name="Bitmap Index" offset="0x11" visible="true" />
+			<int8 name="Flip vertically" offset="0x12" visible="false" />
+		</reflexive>
+		<reflexive name="Arguments" offset="0x1C" visible="true" entrySize="0x10">
+			<comment title="Arguments">Play around with each entry to find the desired setting.
+
+&gt;FOR TINTS:
+Arg 1-Red
+Arg 2-Green
+Arg 3-Blue
+Arg 4-Magnitude
+
+&gt;FOR OPTIONS:
+Arg 1-X Scale/Amount
+Arg 2-Y Scale/Amount
+Arg 3-X Offset
+Arg 4-Y Offset</comment>
+			<float32 name="Arg 1" offset="0x0" visible="true" />
+			<float32 name="Arg 2" offset="0x4" visible="true" />
+			<float32 name="Arg 3" offset="0x8" visible="true" />
+			<float32 name="Arg 4" offset="0xC" visible="true" />
+		</reflexive>
+		<reflexive name="Unknown" offset="0x28" visible="false" entrySize="0x4">
+			<undefined name="Unknown" offset="0x0" visible="false" />
+		</reflexive>
+		<uint16 name="Unknown" offset="0x34" visible="false" />
+		<uint16 name="Unknown" offset="0x36" visible="false" />
+		<reflexive name="DrawModes" offset="0x38" visible="true" entrySize="0x2">
+			<int8 name="Unknown3 Index" offset="0x0" visible="true" />
+			<int8 name="Flag" offset="0x1" visible="true" />
+		</reflexive>
+		<reflexive name="Unknown3" offset="0x44" visible="true" entrySize="0x6">
+			<int8 name="ArgMapIndex Sampler" offset="0x0" visible="true" />
+			<int8 name="ArgMapCount Sampler" offset="0x1" visible="true" />
+			<int8 name="Unknown0" offset="0x2" visible="true" />
+			<int8 name="Unknown0" offset="0x3" visible="true" />
+			<int8 name="ArgMapIndex Vector?" offset="0x4" visible="true" />
+			<int8 name="ArgMapCount Vector?" offset="0x5" visible="true" />
+		</reflexive>
+		<reflexive name="ArgumentMappings" offset="0x50" visible="true" entrySize="0x4">
+			<int16 name="RegisterIndex" offset="0x0" visible="true" />
+			<int8 name="Function Index" offset="0x2" visible="true" />
+			<int8 name="ArgumentIndex" offset="0x3" visible="true" />
+		</reflexive>
+		<reflexive name="Functions" offset="0x5C" visible="true" entrySize="0x24">
+			<int32 name="Unknown" offset="0x0" visible="true" />
+			<stringid name="Name" offset="0x4" visible="true" />
+			<undefined name="Unknown" offset="0x8" visible="true" />
+			<undefined name="Unknown" offset="0xC" visible="true" />
+			<dataRef name="Function" offset="0x10" visible="true" />
+		</reflexive>
+		<int32 name="Alpha/Transparency" offset="0x68" visible="false" />
+		<int32 name="Alpha/Transparency2" offset="0x6C" visible="false" />
+		<undefined name="Unknown" offset="0x70" visible="false" />
+		<int16 name="Unknown" offset="0x74" visible="false" />
+		<int16 name="Unknown" offset="0x76" visible="false" />
+		<int16 name="Unknown" offset="0x78" visible="false" />
+		<int16 name="Unknown" offset="0x7A" visible="false" />
+		<int16 name="Unknown" offset="0x7C" visible="false" />
+		<int16 name="Unknown" offset="0x7E" visible="false" />
+		<int16 name="Unknown" offset="0x80" visible="false" />
+		<int16 name="Unknown" offset="0x82" visible="false" />
+	</reflexive>
+	<uint16 name="Unknown InputVariable RangeVariable" offset="0x34" visible="false" />
+	<int8 name="Unknown OutputModifier" offset="0x36" visible="false" />
+	<int8 name="Unknown OutputModifierInput" offset="0x37" visible="false" />
+	<int32 name="RuntimeMConstantValue" offset="0x38" visible="false" />
+	<int8 name="RuntimeMFlags" offset="0x3C" visible="false" />
+	<int8 name="RuntimeMFlags" offset="0x3D" visible="false" />
+	<int8 name="RuntimeMFlags" offset="0x3E" visible="false" />
+	<int8 name="RuntimeMFlags" offset="0x3F" visible="false" />
+	<stringid name="Material" offset="0x40" visible="true" />
+</plugin>

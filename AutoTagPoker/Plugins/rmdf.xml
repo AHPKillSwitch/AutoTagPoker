@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin game="HaloOnline" baseSize="0x5C">
+	<!-- Automatically generated plugin -->
+	<revisions>
+		<revision author="Assembly" version="1">Generated plugin from scratch.</revision>
+	</revisions>
+	<tagRef name="Unknown" offset="0x0" visible="false" />
+	<reflexive name="Methods" offset="0x10" visible="true" entrySize="0x18">
+		<stringId name="Type" offset="0x0" visible="true" />
+		<reflexive name="Shader Options" offset="0x4" visible="true" entrySize="0x1C">
+			<stringId name="Type" offset="0x0" visible="true" />
+			<tagRef name="Option" offset="0x4" visible="true" />
+			<stringid name="Unknown" offset="0x14" visible="false" />
+			<stringid name="Unknown" offset="0x18" visible="false" />
+		</reflexive>
+		<stringid name="Unknown" offset="0x10" visible="false" />
+		<stringid name="Unknown" offset="0x14" visible="false" />
+	</reflexive>
+	<reflexive name="Supported Drawmodes?" offset="0x1C" visible="true" entrySize="0x10">
+		<enum32 name="Drawmode" offset="0x0" visible="true">
+			<option name="default" value="0x0" />
+			<option name="albedo" value="0x1" />
+			<option name="static_default" value="0x2" />
+			<option name="static_per_pixel" value="0x3" />
+			<option name="static_per_vertex" value="0x4" />
+			<option name="static_sh" value="0x5" />
+			<option name="static_prt_ambient" value="0x6" />
+			<option name="static_prt_linear" value="0x7" />
+			<option name="static_prt_quadratic" value="0x8" />
+			<option name="dynamic_light" value="0x9" />
+			<option name="shadow_generate" value="0xA" />
+			<option name="shadow_apply" value="0xB" />
+			<option name="active_camo" value="0xC" />
+			<option name="lightmap_debug_mode" value="0xD" />
+			<option name="static_per_vertex_color" value="0xE" />
+			<option name="water_tessellation" value="0xF" />
+			<option name="water_shading" value="0x10" />
+			<option name="dynamic_light_cine" value="0x11" />
+			<option name="z_only" value="0x12" />
+			<option name="sfx_distort" value="0x13" />
+		</enum32>
+		<reflexive name="Unknown" offset="0x4" visible="false" entrySize="0x10">
+			<int32 name="Unknown" offset="0x0" visible="false" />
+			<reflexive name="Unknown" offset="0x4" visible="false" entrySize="0x4">
+				<int32 name="Unknown" offset="0x0" visible="false" />
+			</reflexive>
+		</reflexive>
+	</reflexive>
+	<reflexive name="Unknown" offset="0x28" visible="false" entrySize="0x10">
+		<int32 name="Unknown" offset="0x0" visible="false" />
+		<undefined name="Unknown" offset="0x4" visible="false" />
+		<undefined name="Unknown" offset="0x8" visible="false" />
+		<undefined name="Unknown" offset="0xC" visible="false" />
+	</reflexive>
+	<tagRef name="Unknown" offset="0x34" visible="false" />
+	<tagRef name="Unknown" offset="0x44" visible="false" />
+	<undefined name="Unknown" offset="0x54" visible="false" />
+	<undefined name="Unknown" offset="0x58" visible="false" />
+</plugin>
